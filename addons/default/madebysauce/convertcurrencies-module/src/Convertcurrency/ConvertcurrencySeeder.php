@@ -8,10 +8,15 @@ class ConvertcurrencySeeder extends Seeder
 {
 
     private $convertcurrencyRepository;
+    private $currency;
 
     public function __construct(ConvertcurrencyRepositoryInterface $convertcurrencyRepository)
     {
         $this->convertcurrencyRepository = $convertcurrencyRepository;
+    }
+
+    public function setCurrency($currency){
+        $this->currency = $currency;
     }
 
     /**
@@ -19,8 +24,11 @@ class ConvertcurrencySeeder extends Seeder
      */
     public function run()
     {
+        dump('Here I Will Be Reading The http://www.floatrates.com/daily/'.$this->currency.'.xml] file and will seed my table');
 
         $this->convertcurrencyRepository->truncate();
+
+
 
     }
 }

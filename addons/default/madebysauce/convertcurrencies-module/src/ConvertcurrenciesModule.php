@@ -17,7 +17,7 @@ class ConvertcurrenciesModule extends Module
      *
      * @var string
      */
-    protected $icon = 'fa fa-puzzle-piece';
+    protected $icon = 'fa fa-gbp';
 
     /**
      * The module sections.
@@ -27,7 +27,9 @@ class ConvertcurrenciesModule extends Module
     protected $sections = [
         'convertcurrencies' => [
             'buttons' => [
-                'new_convertcurrency',
+                'new_convertcurrency' => [
+                    'text' => 'New Currency Rate'
+                ],
             ],
         ],
     ];

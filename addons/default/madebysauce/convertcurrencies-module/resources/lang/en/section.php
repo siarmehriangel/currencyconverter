@@ -2,6 +2,6 @@
 
 return [
     'convertcurrencies' => [
-        'title' => 'Convertcurrencies',
+        'title' => 'Currency Rates',
     ],
 ];

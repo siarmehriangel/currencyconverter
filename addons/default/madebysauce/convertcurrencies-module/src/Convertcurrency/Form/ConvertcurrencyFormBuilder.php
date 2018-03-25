@@ -4,13 +4,19 @@ use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 
 class ConvertcurrencyFormBuilder extends FormBuilder
 {
-
     /**
      * The form fields.
      *
      * @var array|string
      */
-    protected $fields = [];
+    protected $fields = [
+        'pubDate',
+        'baseCurrency',
+        'baseName',
+        'targetCurrency',
+        'targetName',
+        'exchangeRate'
+    ];
 
     /**
      * Additional validation rules.

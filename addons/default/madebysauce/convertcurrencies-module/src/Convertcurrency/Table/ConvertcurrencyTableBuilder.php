@@ -17,14 +17,20 @@ class ConvertcurrencyTableBuilder extends TableBuilder
      *
      * @var array|string
      */
-    protected $filters = [];
+    protected $filters = [
+        'targetCurrency'
+    ];
 
     /**
      * The table columns.
      *
      * @var array|string
      */
-    protected $columns = [];
+    protected $columns = [
+        'baseCurrency',
+        'targetCurrency',
+        'exchangeRate'
+    ];
 
     /**
      * The table buttons.

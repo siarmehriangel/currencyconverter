@@ -5,5 +5,6 @@ use Anomaly\Streams\Platform\Model\Convertcurrencies\ConvertcurrenciesConvertcur
 
 class ConvertcurrencyModel extends ConvertcurrenciesConvertcurrenciesEntryModel implements ConvertcurrencyInterface
 {
-
+    //for mass assignment
+    protected $guarded = ['id'];
 }

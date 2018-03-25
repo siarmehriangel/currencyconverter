@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'new_convertcurrency' => 'New Convertcurrency',
+    'new_convertcurrency' => 'New Currency Rate',
 ];

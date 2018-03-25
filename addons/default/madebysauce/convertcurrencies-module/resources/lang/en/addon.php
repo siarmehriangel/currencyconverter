@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Convertcurrencies',
-    'name'        => 'Convertcurrencies Module',
-    'description' => ''
+    'title'       => 'Currency Rates',
+    'name'        => 'Convert Rates Module',
+    'description' => 'Adding New Currency Rates Here'
 ];

@@ -1,0 +1,9 @@
+{
+    "name": "madebysauce/convertcurrencies-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Madebysauce\\ConvertcurrenciesModule\\": "src/"
+        }
+    }
+}

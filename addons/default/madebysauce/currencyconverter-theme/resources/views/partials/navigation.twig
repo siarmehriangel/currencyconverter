@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url("/") }}">
+            <a class="navbar-brand" href="{{ url("currencyconverter") }}">
                 {{ image("theme::img/logo.png").height("50")|raw }}
             </a>
         </div>
@@ -21,17 +21,9 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-
-                <li>
-                    <a href="{{ url_route('/') }}">Convert Currencies</a>
+                    <a href="{{ url('currencyconverter') }}">Convert Currencies</a>
                 </li>
 
-                <li>
-                    <a href="{{ url_route('/') }}">Convert Currencies (table)</a>
-                </li>
-
-                    {#<a href="{{ url_route('anomaly.module.posts::posts.index') }}">Posts</a>#}
-                </li>
                 <li>
                     {% if auth_check() %}
                         <a href="{{ url_route('anomaly.module.users::logout') }}">Logout</a>

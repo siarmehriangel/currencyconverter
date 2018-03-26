@@ -1,7 +1,9 @@
-# PyroCMS
+##Currency Converter added theme addon:
+php artisan make:addon madebysauce.theme.currencyconverter
 
-PyroCMS is an easy to use, powerful, and modular CMS and development platform built with Laravel 5.
+##Currency Converter added module addon:
+php artisan make:addon madebysauce.module.convertcurrencies
 
-## Security
+##Currency Converter installed module addon:
+php artisan addon:install convertcurrencies
 
-If you discover any security related issues, please email ryan@pyrocms.com instead of using the issue tracker.

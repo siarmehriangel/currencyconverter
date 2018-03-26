@@ -44,6 +44,7 @@ class ConvertcurrenciesModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $routes = [
+        'currencyconverter'           => 'Madebysauce\ConvertcurrenciesModule\Http\Controller\User\ConvertcurrenciesController@index',
         'admin/convertcurrencies'           => 'Madebysauce\ConvertcurrenciesModule\Http\Controller\Admin\ConvertcurrenciesController@index',
         'admin/convertcurrencies/create'    => 'Madebysauce\ConvertcurrenciesModule\Http\Controller\Admin\ConvertcurrenciesController@create',
         'admin/convertcurrencies/edit/{id}' => 'Madebysauce\ConvertcurrenciesModule\Http\Controller\Admin\ConvertcurrenciesController@edit',

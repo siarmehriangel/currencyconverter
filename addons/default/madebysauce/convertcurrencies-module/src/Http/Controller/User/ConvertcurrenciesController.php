@@ -69,7 +69,8 @@ class ConvertcurrenciesController extends PublicController
         foreach ($targetCurrencies as $targetCurrency){
             $currencyRatesCollection = collect($this->currencyRates)->where('targetCurrency','=', $targetCurrency)->first();
             if($currencyRatesCollection and sizeof($currencyRatesCollection)){
-                $currencyRatesCollection['exchangeRate'] *= $requestArray['exchangeAmount'];
+                $currencyRatesCollection['calculated'] = $currencyRatesCollection['exchangeRate'] * $requestArray['exchangeAmount'];
+                $currencyRatesCollection['exchangeAmount'] = $requestArray['exchangeAmount'];
                 $tempPubDate = $currencyRatesCollection['pubDate'];
                 $calculations[] = $currencyRatesCollection;
             } elseif($targetCurrency == $requestArray['basecurrency']){
@@ -82,11 +83,13 @@ class ConvertcurrenciesController extends PublicController
                     'baseName' => $requestArray['basecurrency'],
                     'targetCurrency' => $requestArray['basecurrency'],
                     'targetName' => $requestArray['basecurrency'],
-                    'exchangeRate' => $requestArray['exchangeAmount'],
+                    'exchangeRate' => 1,
+                    'calculated' => $requestArray['exchangeAmount'],
+                    'exchangeAmount' => $requestArray['exchangeAmount']
                 ];
             }
-
         }
+
         return $calculations;
     }
 }

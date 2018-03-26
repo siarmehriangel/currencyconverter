@@ -10,3 +10,7 @@ php artisan make:addon madebysauce.module.convertcurrencies
 
 php artisan addon:install convertcurrencies
 
+# Notes:
+    Everything is pushed into master as it is one person project.
+    if you have any question please email siarmehri@gmail.com
+
